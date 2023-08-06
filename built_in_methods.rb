@@ -8,19 +8,26 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include? method is called on the string object "Hello World"
+# The argument passed in this method call is "Hello"; include? has the job of determining if a substring exists within a  String object
+# The return value is "true" because the string object does include the substring text "Hello"
 "Hello World".include?("Hello")
 
-
+# The end_with? method is called on the string object "Hello World"
+# The argument passed in this method call is "Hello"; end_with? has the job of checking to see if the specified string ends with the text from the argument or not.
+# The return value is "false" because the string object does not end with the text "Hello"
 "Hello World".end_with?("Hello")
 
 
+# The end_with? method is called on the string object "Hello World"
+# The argument passed in this method call is suffix "rld"; end_with? has the job of checking to see if the specified string ends with the text from the argument or not.
+# The return value is "true" because the string object does end with the suffix "rld"
 "Hello World".end_with?("rld")
 
-
+# The even? method is being called on the integer 12. The job of the method even? is to return a boolean value as to whether an integer is even or not. Since 12 is even, the return value should be boolean "true."
 12.even?
 
-
+# The next method is being called on the integer 18. The job of the method next is to return the next integer in ascending order. The return value is 19 since that is the next integer to follow 18.
 18.next
 
 
@@ -39,7 +46,13 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+pizza = "Yummy!"
+music = "Fun!"
+# The upcase method is called on the pizza variable, which stores the string object, "Yummy!" In the below example, the return value is, "YUMMY!" because the upcase method capitalizes all characters in a string.
+p pizza.upcase
 
+# The end_with? method is called on the music variable, which stores the string object, "Fun!" In the below example, the return value is boolean true because the string ends with the suffix given in the argument. 
+p music.end_with?("!")
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
@@ -47,6 +60,13 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+age = 43
+jersey_num = 40
+# The next method is called on the age variable, which stores the integer 43. The job of the next method is to return the next integer in ascending order. The return value is 44 since that is the next integer to follow 43.
+p age.next
+
+# The even? method is called on the jersey_number variable, which stores the integer 40. The job of the method even? is to return a boolean value as to whether an integer is even or not. Since 40 is even, the return value is boolean "true."
+p jersey_num.even?
 
 
 # SECTION 4: Calling methods on variables assigned to arrays.
@@ -54,3 +74,12 @@ puts first_name.start_with?("J")
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+hockey_numbers = [3, 17, 40]
+birthyears = [1941, 1944, 1978, 1979]
+
+# The sum method is called on the hockey_numbers variable, which stores the array [3, 17, 40]. The job of the sum method is to return the sum of all integers contained in an array. The return value is 60 since that is the sum of the arrays' integers.
+p hockey_numbers.sum
+
+# The clear method is called on the birthyears variable, which stores the array [1941, 1944, 1978, 1979]. The job of the clear method is to clear the contents held in an array. The return value is [], reflecting that the contents of the array has been cleared.
+p birthyears.clear
