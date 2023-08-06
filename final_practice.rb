@@ -6,8 +6,15 @@
 
 # 1: Write a method named greeting that returns a string with a general greeting. 
 
-# What is the return value of your method?
-# How many arguments did you pass your method?
+# The return value of the method named greeting is the string "Good Day!" It is an implicit return because it is simply the last line in the code block.
+# I did not pass any arguments to this method since there was no need for parameters in the writing of this simple method.
+def greeting
+    "Good day!"
+end
+
+first_greeting = greeting
+
+p first_greeting
 
 
 
@@ -20,9 +27,13 @@ def custom_greeting(name)
     "Well hello there #{name}. Hope you're having a good one!"
 end
 
-p custom_greeting("Aimee")
-p custom_greeting("Billy")
-p custom_greeting("Frank")
+wife = custom_greeting("Aimee")
+me = custom_greeting("Billy")
+neighbor = custom_greeting("Frank")
+
+puts wife
+puts me
+puts neighbor
 
 
 # 3: Write a method named greet_person that takes in 3 strings, a first, middle, and last name, and returns a sentence with the full name.
@@ -30,6 +41,11 @@ p custom_greeting("Frank")
 # What is the return value of your method?
 # How many arguments did you pass your method?
 # What data type was your argument(s)?
+def greet_person(first)(middle)(last)
+    "Hello #{first middle last}!"
+end
+
+p greet_person "Frank", "Lloyd", "Wright"
 
 
 # 4: Write a method named square that takes in one integer, and returns the square of that integer.
